@@ -126,6 +126,7 @@ impl KeyboardHandler {
                     KEY_C => KEY_H,
                     KEY_R => KEY_9,
                     KEY_F => KEY_8,
+                    KEY_F => KEY_8,
                     // caps + space => x
                     x => x,
                 };
@@ -180,6 +181,11 @@ impl KeyboardHandler {
                         KEY_0 => Some(KEY_F10),
                         KEY_MINUS => Some(KEY_F11),
                         KEY_EQUAL => Some(KEY_F12),
+                        KEY_N => Some(KEY_F13),
+                        KEY_M => Some(KEY_F14),
+                        KEY_COMMA => Some(KEY_F15),
+                        KEY_DOT => Some(KEY_F16),
+                        KEY_SLASH => Some(KEY_F17),
 
                         KEY_COMPOSE => {
                             if input.value == 0 {
