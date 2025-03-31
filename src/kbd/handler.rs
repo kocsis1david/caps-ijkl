@@ -116,16 +116,15 @@ impl KeyboardHandler {
                     KEY_D => KEY_RIGHT,
                     KEY_Q => KEY_MINUS,
                     KEY_E => {
-                        input.code = KEY_LEFTSHIFT;
-                        add_or_remove_key(&mut other_keys, input.value, input.code);
-                        self.write(&input);
+                        // input.code = KEY_LEFTSHIFT;
+                        // add_or_remove_key(&mut other_keys, input.value, input.code);
+                        // self.write(&input);
                         KEY_EQUAL
                     }
                     KEY_Z => KEY_S,
                     KEY_X => KEY_L,
                     KEY_C => KEY_H,
                     KEY_R => KEY_9,
-                    KEY_F => KEY_8,
                     KEY_F => KEY_8,
                     // caps + space => x
                     x => x,
